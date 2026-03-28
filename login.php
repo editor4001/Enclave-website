@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $password = $_POST["password"] ?? '';
 
     if (isset($accounts[$username]) && $accounts[$username] === $password) {
-        header("Location: index.html?username=" . urlencode($username));
+        header("Location: home.html?username=" . urlencode($username));
         exit();
     }
 
