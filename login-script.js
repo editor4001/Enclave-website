@@ -16,9 +16,9 @@ form.addEventListener("submit", function(e) {
 
     if (accounts[username] && accounts[username] === password) {
         // Même redirection que PHP
-        window.location.href = "home.html?username=" + encodeURIComponent(username);
+        window.location.href = "https://editor4001.github.io/Enclave-website/home.html?username=" + encodeURIComponent(username);
     } else {
         // Même redirection que PHP pour login invalide
-        window.location.href = "invalid.html";
+        window.location.href = "https://editor4001.github.io/Enclave-website/invalid.html";
     }
 });
